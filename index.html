@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Libs -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="navbar-wrapper d-flex justify-content-between align-items-center w-100">
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-logo-white" src="assets/images/logos/brand-logo-white.svg" alt="Brand Logo">
+                <img class="brand-logo-black d-none" src="assets/images/logos/brand-logo-black.svg" alt="Brand Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="offcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">
+                        <img src="assets/images/logos/brand-logo-black.svg" alt="Brand Logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="jumbotron">
+        <div class="videotron">
+            <video autoplay loop muted>
+                <source src="assets/videos/videotron.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="jumbotron-content">
+            <h1>INDONESIA ENERGY TRANSITION TOWARDS A SUSTAINABLE FUTURE</h1>
+            <span>One-Stop Gateway and Epicentrum of Synergy</span>
+        </div>
+    </section>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit fugiat ipsa soluta dolorem commodi, explicabo
+        aliquam labore nulla sit provident nesciunt quos autem ipsam totam ducimus dignissimos id numquam. Odit
+        laborum
+        cumque tempora accusantium? Officia corporis sequi, modi suscipit autem temporibus voluptatibus nobis
+        excepturi
+        beatae, harum labore velit veniam explicabo, qui eveniet repudiandae voluptatem enim exercitationem est
+        mollitia
+        aut! Deserunt ipsam soluta sequi, libero mollitia, beatae qui saepe dicta eum suscipit repellat. Laboriosam,
+        atque. Illum nesciunt facere exercitationem accusantium minus consectetur, voluptates ipsam praesentium
+        commodi
+        similique! Nobis cum nam modi beatae, harum vitae? Eveniet molestias quos nemo accusamus accusantium debitis
+        sint aut optio aliquam minus ipsum sequi, laboriosam et voluptates ut quod velit perspiciatis nam deserunt
+        aperiam omnis. Eos explicabo maxime ut molestias nobis necessitatibus dolore. Enim, similique iusto.
+        Perferendis
+        quibusdam ab, assumenda ducimus quia esse hic harum est ipsa tempore cum saepe explicabo repellat alias unde
+        natus maiores, beatae enim. Ad facilis provident veritatis, numquam vel aliquid exercitationem ea cupiditate
+        eveniet inventore! Recusandae blanditiis a odio nihil, deleniti voluptatum ut laborum. Animi nisi natus sed.
+        Inventore nemo repellendus cum. Repudiandae commodi, tenetur vel aliquid unde enim debitis mollitia
+        voluptatem
+        aperiam vero repellendus eos aut nulla temporibus nesciunt tempora nobis eligendi neque. Animi sint, iusto
+        laborum deleniti recusandae fugit, dolorum odit, repellat autem repudiandae deserunt? Eum esse
+        necessitatibus
+        quae voluptatibus laborum quidem temporibus? Odit, aperiam velit. Necessitatibus dolorum dignissimos
+        officiis
+        ducimus, optio numquam, beatae vero in debitis ipsam at. Recusandae atque natus tenetur ea nemo esse beatae
+        excepturi voluptas est, ipsum minima cumque impedit perspiciatis nesciunt, in et laborum voluptates,
+        doloremque
+        deserunt culpa! Dolorem, consequuntur reprehenderit. Quam magni ipsum asperiores modi, numquam ullam
+        laudantium
+        eos dolore quae natus tempore odit minus necessitatibus veniam voluptatum enim voluptatem minima quos non
+        deleniti, unde fugit commodi vero? Omnis, laborum maxime! Repudiandae, omnis quasi.
+    </p>
+    <script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 76) {
+                    $('nav').addClass('scrolled');
+                    $('.brand-logo-white').addClass('d-none');
+                    $('.brand-logo-black').removeClass('d-none');
+                } else {
+                    $('nav').removeClass('scrolled');
+                    $('.brand-logo-white').removeClass('d-none');
+                    $('.brand-logo-black').addClass('d-none');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
